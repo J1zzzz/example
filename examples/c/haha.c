@@ -7,7 +7,7 @@
 int pid1,pid2;
 
 
-main( ){
+int main( ){
 
 int fd[2];
 
@@ -31,7 +31,7 @@ sleep(5); /*自我阻塞5秒*/
 
 lockf(fd[1],0,0);
 
-exit(0);
+return 0;
 
 }else{
 
@@ -49,7 +49,7 @@ sleep(5);
 
 lockf(fd[1],0,0);
 
-exit(0);
+return 0;
 
 }else{
 
@@ -65,7 +65,7 @@ read(fd[0],inpipe,50);
 
 printf("%s\n",inpipe);
 
-exit(0);
+return 0;
 
 }
 
