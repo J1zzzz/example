@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 
+#include <stdlib.h>
+
 int pid1,pid2;
 
 
